@@ -1,0 +1,22 @@
+name: CD
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: npm set registry
+      id: npm-login
+      run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.FLIPCLOCK_PAT }}
+      
+    - name: npm publish
+      id: npm-publish
+      run: npm publish
