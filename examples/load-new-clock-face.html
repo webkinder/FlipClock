@@ -1,40 +1,27 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="../compiled/flipclock.css">
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="../compiled/flipclock.js"></script>		
+		<link rel="stylesheet" href="../dist/flipclock.css">
+		<script src="../dist/flipclock.js"></script>
 	</head>
 	<body>
-		<div class="clock" style="margin:2em;"></div>
+	<div class="clock" style="margin:2em;"></div>
 
-		<script type="text/javascript">
-			var clock;
+	<script type="text/javascript">
+		var el = document.querySelector('.clock');
 
-			$(document).ready(function() {
+		var clock = new FlipClock(el, new Date, {
+			face: 'HourCounter',
+			showSeconds: false
+		});
 
-				// Instantiate a counter
-				clock = new FlipClock($('.clock'), {
-					clockFace: 'HourlyCounter',
-					autoStart: true
-				});
+		setTimeout(function() {
+			// Set the options before you set the face. Setting the face triggers
+			// a the render functions. If you set the option after face, you have
+			// to re-render twice.
+			clock.showSeconds = true;
+			clock.face = 'MinuteCounter';
+		}, 3000);
+	</script>
 
-				setTimeout(function() {
-					clock.loadClockFace('MinuteCounter');
-				}, 3000);
-
-				setTimeout(function() {
-					clock.loadClockFace('HourlyCounter');
-				}, 7000);
-
-				setTimeout(function() {
-					clock.loadClockFace('Counter', {
-						autoStart: true
-					});
-				}, 10000);
-			});
-		</script>
-		
 	</body>
-</html> 
+</html>
