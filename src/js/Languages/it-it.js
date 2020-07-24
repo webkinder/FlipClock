@@ -23,4 +23,4 @@ export const dictionary = {
  * @type {array}
  * @memberof Languages.Italian
  */
-export const aliases = ['da', 'da-dk', 'danish'];
+export const aliases = ['it', 'it-it', 'italian'];
