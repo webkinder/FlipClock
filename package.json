@@ -13,7 +13,7 @@
     "homepage": "http://flipclockjs.com/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/objectivehtml/FlipClock"
+        "url": "https://github.com/webkinder/FlipClock"
     },
     "bugs": {
         "url": "https://github.com/objectivehtml/FlipClock/issues"

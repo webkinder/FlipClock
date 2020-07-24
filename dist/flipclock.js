@@ -1721,7 +1721,7 @@
      * @memberof Languages.Italian
      */
 
-    var aliases$12 = ['da', 'da-dk', 'danish'];
+    var aliases$12 = ['it', 'it-it', 'italian'];
 
     var itIt = /*#__PURE__*/Object.freeze({
         dictionary: dictionary$12,
