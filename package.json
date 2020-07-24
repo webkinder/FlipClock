@@ -1,13 +1,13 @@
 {
-    "name": "flipclock",
-    "version": "0.10.9",
-    "email": "support@objectivehtml.com",
+    "name": "@webkinder/flipclock",
+    "version": "1.0.0",
+    "email": "support@webkinder.ch",
     "author": "Objective HTML, LLC <justin@justin.com>",
     "contributors": [
         "Objective HTML, LLC <support@objectivehtml.com>",
         "Brian Espinosa <b@bje.co>"
     ],
-    "description": "A fully featured countdown clock.",
+    "description": "A not fully featured countdown clock.",
     "license": "MIT",
     "main": "dist/flipclock.js",
     "homepage": "http://flipclockjs.com/",
